@@ -1,0 +1,38 @@
+{
+  "type": "array",
+  "additionalItems": true,
+  "items": {
+    "$id": "#/items",
+    "anyOf": [
+      {
+        "$id": "#/items/anyOf/0",
+        "type": "object",
+        "required": [
+          "userId",
+          "id",
+          "title",
+          "body"
+        ],
+        "properties": {
+          "userId": {
+            "$id": "#/items/anyOf/0/properties/userId",
+            "type": "integer"
+          },
+          "id": {
+            "$id": "#/items/anyOf/0/properties/id",
+            "type": "integer"
+          },
+          "title": {
+            "$id": "#/items/anyOf/0/properties/title",
+            "type": "string"
+          },
+          "body": {
+            "$id": "#/items/anyOf/0/properties/body",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    ]
+  }
+}
